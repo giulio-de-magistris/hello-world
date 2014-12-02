@@ -1620,7 +1620,7 @@ void plot_final_config(int n){
 	char filename[50];
 	FILE *output;
 
-	sprintf(filename, "final.plot.%.1e", w1);
+	sprintf(filename, "final.plot.%.1e.%d", w1, n);
 
 	output = fopen(filename, "w");
 	
